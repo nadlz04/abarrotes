@@ -9,8 +9,8 @@
                     <div class="page-header-title">
                         <i class="ik ik-list bg-blue"></i>
                         <div class="d-inline">
-                            <h5>{{ __('Categories')}}</h5>
-                            <span>Add, remove or edit product categories</span>
+                            <h5>{{ __('Categorias')}}</h5>
+                            <span>Aqui se muestras nuestros productos</span>
                         </div>
                     </div>
                 </div>
@@ -21,7 +21,7 @@
                                 <a href="{{url('dashboard')}}"><i class="ik ik-home"></i></a>
                             </li>
                             <li class="breadcrumb-item">
-                                <a href="#">{{ __('Categories')}}</a>
+                                <a href="#">{{ __('Categorias')}}</a>
                             </li>
                         </ol>
                     </nav>
@@ -50,7 +50,7 @@
                         <div class="d-block d-md-inline-block">
                             <div class="btn-group float-md-left mr-1 mb-1">
                                 <button class="btn btn-outline-dark btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ __('
-                                    Order By')}} 
+                                    Ordenar por')}} 
                                     <i class="ik ik-chevron-down mr-0 align-middle"></i>
                                 </button>
                                 <div class="dropdown-menu">
@@ -60,17 +60,17 @@
                             </div>
                             <div class="search-sm d-inline-block float-md-left mr-1 mb-1 align-top">
                                 <form action="">
-                                    <input type="text" class="form-control" placeholder="Search.." required>
+                                    <input type="text" class="form-control" placeholder="Buscar..." required>
                                     <button type="submit" class="btn btn-icon"><i class="ik ik-search"></i></button>
                                     <button type="button" id="adv_wrap_toggler" class="adv-btn ik ik-chevron-down dropdown-toggle" data-toggle="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                                     <div class="adv-search-wrap dropdown-menu dropdown-menu-right" aria-labelledby="adv_wrap_toggler">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Category Title">
+                                            <input type="text" class="form-control" placeholder="Título de la categoría">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Category Code">
+                                            <input type="text" class="form-control" placeholder="Código de categoría">
                                         </div>
-                                        <button class="btn btn-theme">{{ __('Search')}}</button>
+                                        <button class="btn btn-theme">{{ __('Buscar en')}}</button>
                                     </div>
                                 </form>
                             </div>
@@ -89,7 +89,7 @@
                                 <a class="dropdown-item" href="#">100</a>
                             </div>
                             <button class="btn btn-outline-primary btn-rounded-20" href="#categoryAdd" data-toggle="modal" data-target="#categoryAdd">
-                                Add Category
+                            Añadir categoría
                             </button>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                     <div class="col-xl-3 col-lg-4 col-12 col-sm-6 mb-4 list-item list-item-grid">
                         <div class="card d-flex flex-row mb-3">
                             <a class="d-flex card-img" href="#categoryView" data-toggle="modal" data-target="#categoryView">
-                                <img src=" ../img/portfolio-3.jpg " alt="Donec sit amet est at sem iaculis aliquam." class="list-thumbnail responsive border-0">
+                                <img src=" ../img/portfolio-2.jpg " alt="Donec sit amet est at sem iaculis aliquam." class="list-thumbnail responsive border-0">
                                 
                                 
                                 <span class="badge badge-pill badge-success position-absolute badge-top-left">71 items</span>
@@ -109,7 +109,7 @@
                             <div class="d-flex flex-grow-1 min-width-zero card-content">
                                 <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center mb-0">
                                     <a class="mb-1 list-item-heading  truncate w-40 w-xs-100" href="#categoryView" data-toggle="modal" data-target="#categoryView">
-                                        <b>Electronics 
+                                        <b>Frutas
                                         </b> 
                                         <span class="text-muted">
                                         </span>
@@ -148,11 +148,8 @@
                             <div class="d-flex flex-grow-1 min-width-zero card-content">
                                 <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center mb-0">
                                     <a class="mb-1 list-item-heading  truncate w-40 w-xs-100" href="#categoryView" data-toggle="modal" data-target="#categoryView">
-                                        <b>Computers 
+                                        <b>Verduras
                                         </b> 
-                                        <span class="text-muted">
-                                            - Electronics
-                                        </span>
                                         
                                     </a>
                                     <p class="mb-1 text-muted text-small date w-15 w-xs-100">
@@ -160,6 +157,123 @@
                                     </p>
                                     <div class="w-15 w-xs-100">
                                         <span class="badge badge-pill badge-secondary">71</span>
+                                    </div>
+                                </div>
+                                <div class="list-actions">
+                                    <a href="#categoryView" data-toggle="modal" data-target="#categoryView"><i class="ik ik-edit-2"></i></a>
+                                    <a href="#" class="list-delete"><i class="ik ik-trash-2"></i></a>
+                                </div>
+                                <div class="custom-control custom-checkbox pl-1 align-self-center">
+                                    <label class="custom-control custom-checkbox mb-0">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <span class="custom-control-label"></span>
+                                    </label>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-12 col-sm-6 mb-4 list-item list-item-grid">
+                        <div class="card d-flex flex-row mb-3">
+                            <a class="d-flex card-img" href="#categoryView" data-toggle="modal" data-target="#categoryView">
+                                <img src=" ../img/portfolio-3.jpg " alt="Donec sit amet est at sem iaculis aliquam." class="list-thumbnail responsive border-0">
+                                
+                                
+                                <span class="badge badge-pill badge-success position-absolute badge-top-left">60 items</span>
+                            </a>
+                            <div class="d-flex flex-grow-1 min-width-zero card-content">
+                                <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center mb-0">
+                                    <a class="mb-1 list-item-heading  truncate w-40 w-xs-100" href="#categoryView" data-toggle="modal" data-target="#categoryView">
+                                        <b>Lacteos
+                                        </b> 
+                                       
+                                        
+                                    </a>
+                                    <p class="mb-1 text-muted text-small date w-15 w-xs-100">
+                                        CAT3
+                                    </p>
+                                    <div class="w-15 w-xs-100">
+                                        <span class="badge badge-pill badge-secondary">71</span>
+                                    </div>
+                                </div>
+                                <div class="list-actions">
+                                    <a href="#categoryView" data-toggle="modal" data-target="#categoryView"><i class="ik ik-edit-2"></i></a>
+                                    <a href="#" class="list-delete"><i class="ik ik-trash-2"></i></a>
+                                </div>
+                                <div class="custom-control custom-checkbox pl-1 align-self-center">
+                                    <label class="custom-control custom-checkbox mb-0">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <span class="custom-control-label"></span>
+                                    </label>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-xl-3 col-lg-4 col-12 col-sm-6 mb-4 list-item list-item-grid">
+                        <div class="card d-flex flex-row mb-3">
+                            <a class="d-flex card-img" href="#categoryView" data-toggle="modal" data-target="#categoryView">
+                                <img src=" ../img/portfolio-3.jpg " alt="Donec sit amet est at sem iaculis aliquam." class="list-thumbnail responsive border-0">
+                                
+                                
+                                <span class="badge badge-pill badge-success position-absolute badge-top-left">99 items</span>
+                            </a>
+                            <div class="d-flex flex-grow-1 min-width-zero card-content">
+                                <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center mb-0">
+                                    <a class="mb-1 list-item-heading  truncate w-40 w-xs-100" href="#categoryView" data-toggle="modal" data-target="#categoryView">
+                                        <b>Carnes 
+                                        </b> 
+                                        <span class="text-muted">
+                                        </span>
+                                        
+                                    </a>
+                                    <p class="mb-1 text-muted text-small date w-15 w-xs-100">
+                                        CAT4
+                                    </p>
+                                    <div class="w-15 w-xs-100">
+                                        <span class="badge badge-pill badge-secondary">27</span>
+                                    </div>
+                                </div>
+                                <div class="list-actions">
+                                    <a href="#categoryView" data-toggle="modal" data-target="#categoryView"><i class="ik ik-edit-2"></i></a>
+                                    <a href="#" class="list-delete"><i class="ik ik-trash-2"></i></a>
+                                </div>
+                                <div class="custom-control custom-checkbox pl-1 align-self-center">
+                                    <label class="custom-control custom-checkbox mb-0">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <span class="custom-control-label"></span>
+                                    </label>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-12 col-sm-6 mb-4 list-item list-item-grid">
+                        <div class="card d-flex flex-row mb-3">
+                            <a class="d-flex card-img" href="#categoryView" data-toggle="modal" data-target="#categoryView">
+                                <img src=" ../img/portfolio-3.jpg " alt="Donec sit amet est at sem iaculis aliquam." class="list-thumbnail responsive border-0">
+                                
+                                
+                                <span class="badge badge-pill badge-success position-absolute badge-top-left">99 items</span>
+                            </a>
+                            <div class="d-flex flex-grow-1 min-width-zero card-content">
+                                <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center mb-0">
+                                    <a class="mb-1 list-item-heading  truncate w-40 w-xs-100" href="#categoryView" data-toggle="modal" data-target="#categoryView">
+                                        <b>Congelados
+                                        </b> 
+                                        <span class="text-muted">
+                                        </span>
+                                        
+                                    </a>
+                                    <p class="mb-1 text-muted text-small date w-15 w-xs-100">
+                                        CAT5
+                                    </p>
+                                    <div class="w-15 w-xs-100">
+                                        <span class="badge badge-pill badge-secondary">27</span>
                                     </div>
                                 </div>
                                 <div class="list-actions">
@@ -188,14 +302,14 @@
                             <div class="d-flex flex-grow-1 min-width-zero card-content">
                                 <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center mb-0">
                                     <a class="mb-1 list-item-heading  truncate w-40 w-xs-100" href="#categoryView" data-toggle="modal" data-target="#categoryView">
-                                        <b>Smart Home 
+                                        <b>Bebidas
                                         </b> 
                                         <span class="text-muted">
                                         </span>
                                         
                                     </a>
                                     <p class="mb-1 text-muted text-small date w-15 w-xs-100">
-                                        CAT3
+                                        CAT6
                                     </p>
                                     <div class="w-15 w-xs-100">
                                         <span class="badge badge-pill badge-secondary">27</span>
@@ -215,7 +329,85 @@
                             </div>
                         </div>
                     </div>
-                    
+
+                    <div class="col-xl-3 col-lg-4 col-12 col-sm-6 mb-4 list-item list-item-grid">
+                        <div class="card d-flex flex-row mb-3">
+                            <a class="d-flex card-img" href="#categoryView" data-toggle="modal" data-target="#categoryView">
+                                <img src=" ../img/portfolio-1.jpg " alt="Donec sit amet est at sem iaculis aliquam." class="list-thumbnail responsive border-0">
+                                
+                                
+                                <span class="badge badge-pill badge-success position-absolute badge-top-left">99 items</span>
+                            </a>
+                            <div class="d-flex flex-grow-1 min-width-zero card-content">
+                                <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center mb-0">
+                                    <a class="mb-1 list-item-heading  truncate w-40 w-xs-100" href="#categoryView" data-toggle="modal" data-target="#categoryView">
+                                        <b>Panaderia
+                                        </b> 
+                                        <span class="text-muted">
+                                        </span>
+                                        
+                                    </a>
+                                    <p class="mb-1 text-muted text-small date w-15 w-xs-100">
+                                        CAT7
+                                    </p>
+                                    <div class="w-15 w-xs-100">
+                                        <span class="badge badge-pill badge-secondary">27</span>
+                                    </div>
+                                </div>
+                                <div class="list-actions">
+                                    <a href="#categoryView" data-toggle="modal" data-target="#categoryView"><i class="ik ik-edit-2"></i></a>
+                                    <a href="#" class="list-delete"><i class="ik ik-trash-2"></i></a>
+                                </div>
+                                <div class="custom-control custom-checkbox pl-1 align-self-center">
+                                    <label class="custom-control custom-checkbox mb-0">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <span class="custom-control-label"></span>
+                                    </label>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-12 col-sm-6 mb-4 list-item list-item-grid">
+                        <div class="card d-flex flex-row mb-3">
+                            <a class="d-flex card-img" href="#categoryView" data-toggle="modal" data-target="#categoryView">
+                                <img src=" ../img/portfolio-3.jpg " alt="Donec sit amet est at sem iaculis aliquam." class="list-thumbnail responsive border-0">
+                                
+                                
+                                <span class="badge badge-pill badge-success position-absolute badge-top-left">99 items</span>
+                            </a>
+                            <div class="d-flex flex-grow-1 min-width-zero card-content">
+                                <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center mb-0">
+                                    <a class="mb-1 list-item-heading  truncate w-40 w-xs-100" href="#categoryView" data-toggle="modal" data-target="#categoryView">
+                                        <b>Abarrotes
+                                        </b> 
+                                        <span class="text-muted">
+                                        </span>
+                                        
+                                    </a>
+                                    <p class="mb-1 text-muted text-small date w-15 w-xs-100">
+                                        CAT8
+                                    </p>
+                                    <div class="w-15 w-xs-100">
+                                        <span class="badge badge-pill badge-secondary">27</span>
+                                    </div>
+                                </div>
+                                <div class="list-actions">
+                                    <a href="#categoryView" data-toggle="modal" data-target="#categoryView"><i class="ik ik-edit-2"></i></a>
+                                    <a href="#" class="list-delete"><i class="ik ik-trash-2"></i></a>
+                                </div>
+                                <div class="custom-control custom-checkbox pl-1 align-self-center">
+                                    <label class="custom-control custom-checkbox mb-0">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <span class="custom-control-label"></span>
+                                    </label>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col-xl-3 col-lg-4 col-12 col-sm-6 mb-4 list-item list-item-grid">
                         <div class="card d-flex flex-row mb-3">
                             <a class="d-flex card-img" href="#categoryView" data-toggle="modal" data-target="#categoryView">
@@ -227,14 +419,12 @@
                             <div class="d-flex flex-grow-1 min-width-zero card-content">
                                 <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center mb-0">
                                     <a class="mb-1 list-item-heading  truncate w-40 w-xs-100" href="#categoryView" data-toggle="modal" data-target="#categoryView">
-                                        <b>Arts &amp; Crafts 
+                                        <b>Limpieza
                                         </b> 
-                                        <span class="text-muted">
-                                        </span>
                                         
                                     </a>
                                     <p class="mb-1 text-muted text-small date w-15 w-xs-100">
-                                        CAT4
+                                        CAT9
                                     </p>
                                     <div class="w-15 w-xs-100">
                                         <span class="badge badge-pill badge-secondary">29</span>
@@ -266,14 +456,14 @@
                             <div class="d-flex flex-grow-1 min-width-zero card-content">
                                 <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center mb-0">
                                     <a class="mb-1 list-item-heading  truncate w-40 w-xs-100" href="#categoryView" data-toggle="modal" data-target="#categoryView">
-                                        <b>Fashion 
+                                        <b>Medicina
                                         </b> 
                                         <span class="text-muted">
                                         </span>
                                         
                                     </a>
                                     <p class="mb-1 text-muted text-small date w-15 w-xs-100">
-                                        CAT5
+                                        CAT10
                                     </p>
                                     <div class="w-15 w-xs-100">
                                         <span class="badge badge-pill badge-secondary">4</span>
@@ -305,14 +495,14 @@
                             <div class="d-flex flex-grow-1 min-width-zero card-content">
                                 <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center mb-0">
                                     <a class="mb-1 list-item-heading  truncate w-40 w-xs-100" href="#categoryView" data-toggle="modal" data-target="#categoryView">
-                                        <b>Baby 
+                                        <b>Dulceria
                                         </b> 
                                         <span class="text-muted">
                                         </span>
                                         
                                     </a>
                                     <p class="mb-1 text-muted text-small date w-15 w-xs-100">
-                                        CAT6
+                                        CAT11
                                     </p>
                                     <div class="w-15 w-xs-100">
                                         <span class="badge badge-pill badge-secondary">53</span>
@@ -344,14 +534,14 @@
                             <div class="d-flex flex-grow-1 min-width-zero card-content">
                                 <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center mb-0">
                                     <a class="mb-1 list-item-heading  truncate w-40 w-xs-100" href="#categoryView" data-toggle="modal" data-target="#categoryView">
-                                        <b>Health &amp; Care 
+                                        <b>Cuidados de Bebes
                                         </b> 
                                         <span class="text-muted">
                                         </span>
                                         
                                     </a>
                                     <p class="mb-1 text-muted text-small date w-15 w-xs-100">
-                                        CAT7
+                                        CAT12
                                     </p>
                                     <div class="w-15 w-xs-100">
                                         <span class="badge badge-pill badge-secondary">54</span>
@@ -383,17 +573,17 @@
                             <div class="d-flex flex-grow-1 min-width-zero card-content">
                                 <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center mb-0">
                                     <a class="mb-1 list-item-heading  truncate w-40 w-xs-100" href="#categoryView" data-toggle="modal" data-target="#categoryView">
-                                        <b>Others 
+                                        <b>Mariscos
                                         </b> 
                                         <span class="text-muted">
                                         </span>
                                         
                                     </a>
                                     <p class="mb-1 text-muted text-small date w-15 w-xs-100">
-                                        CAT8
+                                        CAT13
                                     </p>
                                     <div class="w-15 w-xs-100">
-                                        <span class="badge badge-pill badge-secondary">62</span>
+                                        <span class="badge badge-pill badge-secondary">65</span>
                                     </div>
                                 </div>
                                 <div class="list-actions">
@@ -414,7 +604,7 @@
                     <div class="col-xl-3 col-lg-4 col-12 col-sm-6 mb-4 list-item list-item-grid">
                         <div class="card d-flex flex-row mb-3">
                             <a class="d-flex card-img" href="#categoryView" data-toggle="modal" data-target="#categoryView">
-                                <img src="http://127.0.0.1:3030/img/products/ipone-6.jpg " alt="Donec sit amet est at sem iaculis aliquam." class="list-thumbnail responsive border-0">
+                                <img src=" ../img/portfolio-3.jpg " alt="Donec sit amet est at sem iaculis aliquam." class="list-thumbnail responsive border-0">
                                 
                                 
                                 <span class="badge badge-pill badge-success position-absolute badge-top-left">65 items</span>
@@ -422,18 +612,89 @@
                             <div class="d-flex flex-grow-1 min-width-zero card-content">
                                 <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center mb-0">
                                     <a class="mb-1 list-item-heading  truncate w-40 w-xs-100" href="#categoryView" data-toggle="modal" data-target="#categoryView">
-                                        <b>Mobile Accesories 
+                                        <b>Mascotas
                                         </b> 
-                                        <span class="text-muted">
-                                            - Electronics
-                                        </span>
+                                      
+                                    </a>
+                                    <p class="mb-1 text-muted text-small date w-15 w-xs-100">
+                                        CAT14
+                                    </p>
+                                    <div class="w-15 w-xs-100">
+                                        <span class="badge badge-pill badge-secondary">65</span>
+                                    </div>
+                                </div>
+                                <div class="list-actions">
+                                    <a href="#categoryView" data-toggle="modal" data-target="#categoryView"><i class="ik ik-edit-2"></i></a>
+                                    <a href="#" class="list-delete"><i class="ik ik-trash-2"></i></a>
+                                </div>
+                                <div class="custom-control custom-checkbox pl-1 align-self-center">
+                                    <label class="custom-control custom-checkbox mb-0">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <span class="custom-control-label"></span>
+                                    </label>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-12 col-sm-6 mb-4 list-item list-item-grid">
+                        <div class="card d-flex flex-row mb-3">
+                            <a class="d-flex card-img" href="#categoryView" data-toggle="modal" data-target="#categoryView">
+                                <img src=" ../img/portfolio-3.jpg " alt="Donec sit amet est at sem iaculis aliquam." class="list-thumbnail responsive border-0">
+                                
+                                
+                                <span class="badge badge-pill badge-success position-absolute badge-top-left">65 items</span>
+                            </a>
+                            <div class="d-flex flex-grow-1 min-width-zero card-content">
+                                <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center mb-0">
+                                    <a class="mb-1 list-item-heading  truncate w-40 w-xs-100" href="#categoryView" data-toggle="modal" data-target="#categoryView">
+                                        <b>Bebidas Alcoholicas
+                                        </b> 
+                                      
+                                    </a>
+                                    <p class="mb-1 text-muted text-small date w-15 w-xs-100">
+                                        CAT15
+                                    </p>
+                                    <div class="w-15 w-xs-100">
+                                        <span class="badge badge-pill badge-secondary">65</span>
+                                    </div>
+                                </div>
+                                <div class="list-actions">
+                                    <a href="#categoryView" data-toggle="modal" data-target="#categoryView"><i class="ik ik-edit-2"></i></a>
+                                    <a href="#" class="list-delete"><i class="ik ik-trash-2"></i></a>
+                                </div>
+                                <div class="custom-control custom-checkbox pl-1 align-self-center">
+                                    <label class="custom-control custom-checkbox mb-0">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <span class="custom-control-label"></span>
+                                    </label>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-12 col-sm-6 mb-4 list-item list-item-grid">
+                        <div class="card d-flex flex-row mb-3">
+                            <a class="d-flex card-img" href="#categoryView" data-toggle="modal" data-target="#categoryView">
+                                <img src=" ../img/portfolio-3.jpg " alt="Donec sit amet est at sem iaculis aliquam." class="list-thumbnail responsive border-0">
+                                
+                                
+                                <span class="badge badge-pill badge-success position-absolute badge-top-left">38 items</span>
+                            </a>
+                            <div class="d-flex flex-grow-1 min-width-zero card-content">
+                                <div class="card-body align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center mb-0">
+                                    <a class="mb-1 list-item-heading  truncate w-40 w-xs-100" href="#categoryView" data-toggle="modal" data-target="#categoryView">
+                                        <b>Utiles Escolares
+                                        </b>
                                         
                                     </a>
                                     <p class="mb-1 text-muted text-small date w-15 w-xs-100">
-                                        CAT9
+                                        CAT16
                                     </p>
                                     <div class="w-15 w-xs-100">
-                                        <span class="badge badge-pill badge-secondary">56</span>
+                                        <span class="badge badge-pill badge-secondary">29</span>
                                     </div>
                                 </div>
                                 <div class="list-actions">
@@ -451,12 +712,13 @@
                         </div>
                     </div>
                     
-                    
                 </div>
                 
             </div>
         </div>
     </div>
+
+    
     <!-- category add modal-->
     <div class="modal fade edit-layout-modal pr-0 " id="categoryAdd" tabindex="-1" role="dialog" aria-labelledby="categoryAddLabel" aria-hidden="true">
         <div class="modal-dialog w-300" role="document">
@@ -467,7 +729,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label class="d-block">Category Image</label>
+                        <label class="d-block">Categoría Imagen</label>
                         <input type="file" name="category_image" class="form-control">
                     </div>
                     <div class="form-group">
@@ -525,12 +787,12 @@
                         <label class="d-block">Parent Category</label>
                         {<label class="d-block">Parent Category</label>
                         <select class="form-control select2 ">
-                            <option selected="selected" value="" data-select2-id="3">Select Category</option>
-                            <option value="1">Electronics</option>
+                            <option selected="selected" value="" data-select2-id="5">Select Category</option>
+                            <option value="1">Electronica</option>
                             <option value="3">Smart Home</option>
-                            <option value="4">Arts &amp; Crafts</option>
-                            <option value="5">Fashion</option>
-                            <option value="6">Baby</option>
+                            <option value="4">Arte &amp; Crafts</option>
+                            <option value="5">Moda</option>
+                            <option value="6">Bebes</option>
                             <option value="7">Health &amp; Care</option>
                             <option value="8">Others</option>
                         </select>
