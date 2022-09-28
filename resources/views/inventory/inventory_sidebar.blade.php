@@ -1,8 +1,8 @@
 <div class="app-sidebar colored">
     <div class="sidebar-header">
-        <a class="header-brand" href="{{route('dashboard')}}">
+        <a class="header-brand" href="{{route('admin.index')}}">
             <div class="logo-img">
-               <img height="30" src="{{ asset('img/logo_white.png')}}" class="header-brand-img" title="RADMIN"> 
+               <img height="30" src="{{ asset('img/logo_white.png')}}" class="header-brand-img" title="RADMIN">
             </div>
         </a>
         <div class="sidebar-action"><i class="ik ik-arrow-left-circle"></i></div>
@@ -13,7 +13,7 @@
         $segment1 = request()->segment(1);
         $segment2 = request()->segment(2);
     @endphp
-    
+
     <div class="sidebar-content">
         <div class="nav-container">
             <nav id="main-menu-navigation" class="navigation-main">
@@ -61,7 +61,7 @@
 
                 <!-- end inventory pages -->
 
-                
+
         </div>
     </div>
 </div>
