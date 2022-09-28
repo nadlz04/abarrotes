@@ -11,7 +11,7 @@ class DashboardController extends Controller
     public function dashboard(){
 
     $count = Product::count();
-    $counter = User::count();
+    //$counter = User::count();
     return view('pages.dashboard', compact('count','counter'));
     }
 }
