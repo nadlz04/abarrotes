@@ -58,8 +58,8 @@
                     <div class="submenu-content">
                         <!-- only those have manage_user permission will get access -->
                         @can('manage_user')
-                        <a href="{{url('users')}}" class="menu-item {{ ($segment1 == 'users') ? 'active' : '' }}">{{ __('Users')}}</a>
-                        <a href="{{url('user/create')}}" class="menu-item {{ ($segment1 == 'user' && $segment2 == 'create') ? 'active' : '' }}">{{ __('Add User')}}</a>
+                        <a href="{{url('users')}}" class="menu-item {{ ($segment1 == 'users') ? 'active' : '' }}">{{ __('Usuarios')}}</a>
+                        <a href="{{url('user/create')}}" class="menu-item {{ ($segment1 == 'user' && $segment2 == 'create') ? 'active' : '' }}">{{ __('Agregar Usuario')}}</a>
                          @endcan
                          <!-- only those have manage_role permission will get access -->
                         @can('manage_roles')
@@ -67,7 +67,7 @@
                         @endcan
                         <!-- only those have manage_permission permission will get access -->
                         @can('manage_permission')
-                        <a href="{{url('permission')}}" class="menu-item {{ ($segment1 == 'permission') ? 'active' : '' }}">{{ __('Permission')}}</a>
+                        <a href="{{url('permission')}}" class="menu-item {{ ($segment1 == 'permission') ? 'active' : '' }}">{{ __('Permisos')}}</a>
                         @endcan
                     </div>
                 </div>
