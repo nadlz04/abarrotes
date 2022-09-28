@@ -18,7 +18,7 @@
                     <nav class="breadcrumb-container" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
-                                <a href="{{url('dashboard')}}"><i class="ik ik-home"></i></a>
+                                <a href="{{ route('admin.index')}}"><i class="ik ik-home"></i></a>
                             </li>
                             <li class="breadcrumb-item">
                                 <a href="#">{{ __('Categorias')}}</a>
@@ -724,7 +724,7 @@
         <div class="modal-dialog w-300" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="categoryAddLabel">{{ __('Añadir categoría')}}</h5>
+                    <h5 class="modal-title" id="categoryAddLabel">{{ __('Add Category')}}</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
@@ -733,34 +733,25 @@
                         <input type="file" name="category_image" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label class="d-block">Título de la categoría</label>
+                        <label class="d-block">Category Title</label>
                         <input type="text" name="category_title" class="form-control" placeholder="Enter Category Title">
                     </div>
                     <div class="form-group">
-                        <label class="d-block">Código de categoría</label>
+                        <label class="d-block">Category Code</label>
                         <input type="text" name="category_code" class="form-control" placeholder="Enter Category Code">
                     </div>
                     <div class="form-group">
-                        
-                        <label class="d-block">Categoría principal</label>
+                        <label class="d-block">Parent Category</label>
+                        <label class="d-block">Parent Category</label>
                         <select class="form-control select2 ">
-                            <option selected="selected" value="" data-select2-id="3">Seleccione la categoría</option>
-                            <option value="1">Frutas</option>
-                            <option value="2">Verduras</option>
-                            <option value="3">Lacteos</option>
-                            <option value="4">Carnes</option>
-                            <option value="5">Congelados</option>
-                            <option value="6">Bebidas</option>
-                            <option value="7">Panaderia</option>
-                            <option value="8">Abarrotes</option>
-                            <option value="9">Limpieza</option>
-                            <option value="10">Medicina</option>
-                            <option value="11">Dulceria</option>
-                            <option value="12">Cuidados de Bebes</option>
-                            <option value="13">Mariscos</option>
-                            <option value="14">Mascotas</option>
-                            <option value="15">Bebidas Alcoholicas</option>
-                            <option value="16">Utiles Escolares</option>
+                            <option selected="selected" value="" data-select2-id="3">Select Category</option>
+                            <option value="1">Electronics</option>
+                            <option value="3">Smart Home</option>
+                            <option value="4">Arts &amp; Crafts</option>
+                            <option value="5">Fashion</option>
+                            <option value="6">Baby</option>
+                            <option value="7">Health &amp; Care</option>
+                            <option value="8">Others</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -776,43 +767,34 @@
         <div class="modal-dialog w-300" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="categoryViewLabel">{{ __('Editar categoría')}}</h5>
+                    <h5 class="modal-title" id="categoryViewLabel">{{ __('Edit Category')}}</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label class="d-block">Categoría Imagen</label>
+                        <label class="d-block">Category Image</label>
                         <input type="file" name="category_image" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label class="d-block">Título de la categoría</label>
+                        <label class="d-block">Category Title</label>
                         <input type="text" name="category_title" class="form-control" placeholder="Enter Category Title" value="Computer" >
                     </div>
                     <div class="form-group">
-                        <label class="d-block">Código de categoría</label>
+                        <label class="d-block">Category Code</label>
                         <input type="text" name="category_code" class="form-control" placeholder="Enter Category Code" value="CAT12">
                     </div>
                     <div class="form-group">
-                
-                        {<label class="d-block">Categoría principal</label>
+                        <label class="d-block">Parent Category</label>
+                        {<label class="d-block">Parent Category</label>
                         <select class="form-control select2 ">
-                            <option selected="selected" value="" data-select2-id="5">Seleccione la categoría</option>
-                            <option value="1">Frutas</option>
-                            <option value="2">Verduras</option>
-                            <option value="3">Lacteos</option>
-                            <option value="4">Carnes</option>
-                            <option value="5">Congelados</option>
-                            <option value="6">Bebidas</option>
-                            <option value="7">Panaderia</option>
-                            <option value="8">Abarrotes</option>
-                            <option value="9">Limpieza</option>
-                            <option value="10">Medicina</option>
-                            <option value="11">Dulceria</option>
-                            <option value="12">Cuidados de Bebes</option>
-                            <option value="13">Mariscos</option>
-                            <option value="14">Mascotas</option>
-                            <option value="15">Bebidas Alcoholicas</option>
-                            <option value="16">Utiles Escolares</option>
+                            <option selected="selected" value="" data-select2-id="5">Select Category</option>
+                            <option value="1">Electronica</option>
+                            <option value="3">Smart Home</option>
+                            <option value="4">Arte &amp; Crafts</option>
+                            <option value="5">Moda</option>
+                            <option value="6">Bebes</option>
+                            <option value="7">Health &amp; Care</option>
+                            <option value="8">Others</option>
                         </select>
                     </div>
                     <div class="form-group">

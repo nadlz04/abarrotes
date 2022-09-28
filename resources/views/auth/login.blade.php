@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="{{ asset('plugins/perfect-scrollbar/css/perfect-scrollbar.css') }}">
         <link rel="stylesheet" href="{{ asset('dist/css/theme.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('../css/foto.css')}}">
         <script src="{{ asset('src/js/vendor/modernizr-2.8.3.min.js') }}"></script>
     </head>
 
@@ -33,9 +34,8 @@
                     <div class="col-xl-4 col-lg-4 col-md-4 m-auto">
                         <div class="authentication-form mx-auto">
                             <div class="logo-centered">
-                                <a href="http://radmin.rakibhstu.com"><img height="40" src="{{ asset('img/logo.png') }}" alt="RADMIN" ></a>
+                                <a ><h1>¡BIENVENIDO DE NUEVO!<h1></a>
                             </div>
-                            <p>Welcome back! </p>
                             <form method="POST" action="{{ route('login') }}">
                             @csrf
                                 <div class="form-group">
@@ -60,20 +60,20 @@
                                     <div class="col text-left">
                                         <label class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="item_checkbox" name="item_checkbox" value="option1">
-                                            <span class="custom-control-label">&nbsp;Remember Me</span>
+                                            <span class="custom-control-label">&nbsp;Recuérdame</span>
                                         </label>
                                     </div>
                                     <div class="col text-right">
                                         <a class="btn text-danger" href="{{url('password/forget')}}">
-                                            {{ __('Forgot Password?') }}
+                                            {{ __('¿Has olvidado tu contraseña?') }}
                                         </a>
                                     </div>
                                 </div>
                                 <div class="sign-btn text-center">
-                                    <button class="btn btn-custom">Sign In</button>
+                                    <button class="btn btn-custom">REGISTRARSE</button>
                                 </div>
                                 <div class="register">
-                                    <p>{{ __('No account?')}} <a href="{{url('register')}}">{{ __('Sign Up')}}</a></p>
+                                    <p>{{ __('¿Sin cuenta?')}} <a href="{{url('register')}}">{{ __('Registrate')}}</a></p>
                                 </div>
                                 
                             </form>
@@ -91,3 +91,4 @@
         
     </body>
 </html>
+

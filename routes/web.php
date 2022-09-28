@@ -44,8 +44,11 @@ Route::group(['middleware' => 'auth'], function(){
 	Route::get('/clear-cache', [HomeController::class,'clearCache']);
 
 	// dashboard route
-	Route::get('/dashboard', [DashboardController::class,'dashboard'])
-	->name('dashboard');
+    Route::prefix('admin')->group(function (){
+        Route::get('/', [DashboardController::class,'index'])->name('admin.index');
+        Route::get('category', function () { return view('admin.category.index'); });
+    });
+
 
 	//only those have manage_user permission will get access
 	Route::group(['middleware' => 'can:manage_user'], function(){
@@ -145,7 +148,7 @@ Route::group(['middleware' => 'auth'], function(){
     Route::resource('products', ProductController::class)->names('inventory.product');
 
 
-	Route::get('/categories', function () { return view('inventory.category.index'); });
+
 	Route::get('/sales', function () { return view('inventory.sale.list'); });
 	Route::get('/sales/create', function () { return view('inventory.sale.create'); });
 	Route::get('/purchases', function () { return view('inventory.purchase.list'); });

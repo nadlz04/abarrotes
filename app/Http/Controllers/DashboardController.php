@@ -8,10 +8,11 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
-    public function dashboard(){
+    public function index()
+    {
+        $count = Product::count();
+        $counter = User::count();
 
-    $count = Product::count();
-    $counter = User::count();
-    return view('pages.dashboard', compact('count','counter'));
+        return view('admin.index', compact('count','counter'));
     }
 }
