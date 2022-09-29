@@ -8,8 +8,8 @@
                     <div class="page-header-title">
                         <i class="ik ik-shopping-cart bg-blue"></i>
                         <div class="d-inline">
-                            <h5>Add Sale</h5>
-                            <span>Create Sales Entry</span>
+                            <h5>Agregar Venta</h5>
+                            <span>Crear nueva venta/span>
                         </div>
                     </div>
                 </div>
@@ -20,7 +20,7 @@
                                 <a href="/dashboard"><i class="ik ik-home"></i></a>
                             </li>
                             <li class="breadcrumb-item">
-                                <a href="#">Add Sale</a>
+                                <a href="#">Agregar venta</a>
                             </li>
                         </ol>
                     </nav>
@@ -39,17 +39,17 @@
                             <div class="card mb-0">
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label>Date</label>
+                                        <label>Fecha</label>
                                         <input type="text" class="form-control datetimepicker-input" id="datepicker" data-toggle="datetimepicker" data-target="#datepicker" placeholder="Select Date">
                                     </div>
                                     
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-sm-10 pr-0">
-                                                <label>Customer</label>
+                                                <label>Cliente</label>
 
                                                 <select class="form-control select2">
-                                                	<option selected="selected" value="" data-select2-id="3">Select Customer</option>
+                                                	<option selected="selected" value="" data-select2-id="3">Seleccionar Cliente</option>
                                                 	<option value="1">Alex Ferguson</option>
                                                 	<option value="2">John Doe</option></select>
                                                 
@@ -61,18 +61,6 @@
                                         </div>
                                         
                                     </div>
-                                    <div class="form-group">
-                                        <label>Reference NO</label>
-                                        <input type="text" class="form-control" placeholder="Enter Reference NO">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Tax (%)</label>
-                                        <input type="text" class="form-control" placeholder="Enter Tax" value="10">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Note</label>
-                                        <textarea class="form-control h-123" name="note" placeholder="Enter Note"></textarea> 
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +71,7 @@
                                         <div class="col-sm-4">
                                             <div class="form-group">
                                                 <select class="form-control select2">
-                                                	<option selected="selected" value="" data-select2-id="6">Select Warehouse</option>
+                                                	<option selected="selected" value="" data-select2-id="6">Seleccionar sucursal</option>
                                                 	<option value="1">Warehouse 1</option>
                                                 	<option value="2">Warehouse 2</option>
                                                 </select>
@@ -92,7 +80,7 @@
                                         <div class="col-sm-8">
                                             <div class="form-group">
                                                 <select class="form-control select2">
-                                                	<option selected="selected" value="" data-select2-id="9">Select Product</option>
+                                                	<option selected="selected" value="" data-select2-id="9">Seleccionar Producto</option>
                                                 	<option value="1">HeadPhone</option>
                                                 	<option value="2">Iphone 6</option>
                                                 	<option value="3">Leather Bag</option>
@@ -111,10 +99,10 @@
                                         <table class="table table-hover">
                                             <thead>
                                                 <tr>
-                                                    <th class="wp-10">SL</th>
-                                                    <th class="wp-40">Product</th>
-                                                    <th class="wp-20">Unit Price</th>
-                                                    <th class="wp-15">Qty</th>
+                                                    <th class="wp-10">Nº</th>
+                                                    <th class="wp-40">Producto</th>
+                                                    <th class="wp-20">Precio Unitario</th>
+                                                    <th class="wp-15">Cantidad</th>
                                                     <th class="wp-15">Sub Total</th>
                                                 </tr>
                                             </thead>
@@ -162,38 +150,10 @@
                                         </table>
                                     </div>
                                     <div class="row">
-                                        <div class="col-sm-3">
-                                            <div class="form-group">
-                                                <label>Sale Status</label>
-                                                <select class="form-control" name="sale_status">
-                                                    <option selected="">Select Sale Status</option>
-                                                    <option value="completed">Completed</option>
-                                                    <option value="shipped">Shipped</option>
-                                                    <option value="pending">Pending</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="form-group">
-                                                <label>Payment Status</label>
-                                                <select class="form-control" name="sale_status">
-                                                    <option selected="">Select Payment Status</option>
-                                                    <option value="pending">Pending</option>
-                                                    <option value="due">Due</option>
-                                                    <option value="Paid">Paid</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <div class="form-group">
-                                                <label>Pay</label>
-                                                <input type="text" name="pay" class="form-control text-center  ml-auto" value="" placeholder="Amount">
-                                            </div>
-                                        </div>
                                         <div class="col-sm-4">
                                             <div class="pt-4 text-right">
-                                                <div type="button" class="btn btn-danger" data-toggle="modal" data-target="#InvoiceModal">Preview Invoice</div>
-                                                <div type="submit" class="btn btn-primary">Save</div>
+                                                <div type="button" class="btn btn-danger" data-toggle="modal" data-target="#InvoiceModal">Cancelar</div>
+                                                <div type="submit" class="btn btn-primary">Comprar</div>
                                             </div>
                                         </div>
                                     </div>
