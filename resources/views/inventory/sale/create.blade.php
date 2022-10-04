@@ -9,7 +9,7 @@
                         <i class="ik ik-shopping-cart bg-blue"></i>
                         <div class="d-inline">
                             <h5>Agregar Venta</h5>
-                            <span>Crear nueva venta/span>
+                            <span>Crear nueva venta</span>
                         </div>
                     </div>
                 </div>
@@ -42,44 +42,46 @@
                                         <label>Fecha</label>
                                         <input type="text" class="form-control datetimepicker-input" id="datepicker" data-toggle="datetimepicker" data-target="#datepicker" placeholder="Select Date">
                                     </div>
-                                    
+									<div class="form-group">
+                                        <label>Cliente</label>
+                                        <input type="text" class="form-control numeberpicker-input" id="numberpicker" data-toggle="numberpicker" data-target="#numberpicker">
+                                    </div>
+									<div class="form-group">
+                                        <label>Numero de Referencia</label>
+                                        <input type="text" class="form-control numeberpicker-input" id="numberpicker" data-toggle="numberpicker" data-target="#numberpicker">
+                                    </div>
+									<div class="form-group">
+                                        <label>Modo de pago</label>
+                                        <input type="text" class="form-control numeberpicker-input" id="numberpicker" data-toggle="numberpicker" data-target="#numberpicker">
+                                    </div>	
+									<div class="form-group">
+                                        <label>Nota</label>
+                                        <input type="text" class="form-control numeberpicker-input" id="numberpicker" data-toggle="numberpicker" data-target="#numberpicker">
+                                    </div>								
                                     <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-sm-10 pr-0">
-                                                <label>Cliente</label>
-
-                                                <select class="form-control select2">
-                                                	<option selected="selected" value="" data-select2-id="3">Seleccionar Cliente</option>
-                                                	<option value="1">Alex Ferguson</option>
-                                                	<option value="2">John Doe</option></select>
-                                                
-                                            </div>
-                                            <div class="col-sm-2 pl-1 pt-1">
-                                                <button type="button" class="mt-4 btn btn-sm btn-primary" data-toggle="modal" data-target="#CustomerAdd">+</button>
-                                            </div>
-                                            
+                                        <div class="row">                                            
                                         </div>
                                         
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-9">
-                            <div class="card mb-0">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                                <select class="form-control select2">
-                                                	<option selected="selected" value="" data-select2-id="6">Seleccionar sucursal</option>
-                                                	<option value="1">Warehouse 1</option>
-                                                	<option value="2">Warehouse 2</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-8">
-                                            <div class="form-group">
-                                                <select class="form-control select2">
+        <div class="col-md-9">
+            <div class="card mb-0">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <select class="form-control select2">
+                                    <option selected="selected" value="" data-select2-id="6">Tienda</option>
+                                    <option value="1">Tienda 1</option>
+                                    <option value="2">Tienda 2</option>
+                                </select>
+                            </div>
+                         </div>
+                     <div class="col-sm-8">
+                 <div class="form-group">
+                                <select class="form-control select2">
                                                 	<option selected="selected" value="" data-select2-id="9">Seleccionar Producto</option>
                                                 	<option value="1">HeadPhone</option>
                                                 	<option value="2">Iphone 6</option>
@@ -93,17 +95,16 @@
                                                 </select>
                                             </div>
                                         </div>
-                                    </div>
-                                                
+                                    </div>                                   
                                     <div class="salestable">
                                         <table class="table table-hover">
                                             <thead>
                                                 <tr>
                                                     <th class="wp-10">Nº</th>
                                                     <th class="wp-40">Producto</th>
-                                                    <th class="wp-20">Precio Unitario</th>
+                                                    <th class="wp-20">Precio U.</th>
                                                     <th class="wp-15">Cantidad</th>
-                                                    <th class="wp-15">Sub Total</th>
+                                                    <th class="wp-15">Suma</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -128,30 +129,20 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="border-0" colspan="3"></td>
-                                                    <td>Tax (<span id="tax-per">10.00</span>%)</td>
+                                                    <td>Impuesto(<span id="tax-per">18</span>%)</td>
                                                     <td class="text-right">$ 62.00</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="border-0" colspan="3"></td>
-                                                    <td>Shipping</td>
-                                                    <td class="text-right"><input type="text" name="shiping" class="form-control w-60 text-center hm-30 ml-auto" value="50.00"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="border-0" colspan="3"></td>
-                                                    <td>Discount</td>
-                                                    <td class="text-right"><input type="text" name="discount" class="form-control w-60 text-center hm-30 ml-auto" value="0.00"></td>
-                                                </tr>
-                                                <tr>
                                                     <th class="border-0" colspan="3"></th>
-                                                    <th>Grand Total</th>
+                                                    <th>Total Final</th>
                                                     <th class="text-right">$ 732.00</th>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
                                     <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="pt-4 text-right">
+                                        <div class="col-sm-12">
+                                            <div class="pt-12 text-right">
                                                 <div type="button" class="btn btn-danger" data-toggle="modal" data-target="#InvoiceModal">Cancelar</div>
                                                 <div type="submit" class="btn btn-primary">Comprar</div>
                                             </div>
@@ -161,11 +152,8 @@
                             </div>
                         </div>
                     </div>
-                </form>
-                        
-            </div>
-
-                            
+                </form>      
+            </div>                          
         </div>
     </div>
     <div class="modal fade edit-layout-modal pr-0 " id="CustomerAdd" role="dialog" aria-labelledby="CustomerAddLabel" aria-hidden="true">
