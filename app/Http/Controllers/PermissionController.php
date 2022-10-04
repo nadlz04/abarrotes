@@ -12,12 +12,7 @@ use Spatie\Permission\Models\Role;
 
 class PermissionController extends Controller
 {
-    /**
-     * Show Role List
-     *
-     * @param Request $request
-     * @return mixed
-     */
+
     public function index(Request $request): mixed
     {
         try {
@@ -31,13 +26,6 @@ class PermissionController extends Controller
         }
     }
 
-    /**
-     * Show Role List with associate permission
-     * Server side list view using yajra datatables
-     *
-     * @param Request $request
-     * @return mixed
-     */
 
     public function getPermissionList(Request $request): mixed
     {
@@ -68,13 +56,6 @@ class PermissionController extends Controller
             ->make(true);
     }
 
-    /**
-     * Store new roles with assigned permission
-     * Associate permissions will be stored in table
-     *
-     * @param PermissionRequest $request
-     * @return \Illuminate\Http\RedirectResponse
-     */
 
     public function create(PermissionRequest $request): RedirectResponse
     {

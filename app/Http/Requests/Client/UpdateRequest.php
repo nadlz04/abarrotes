@@ -6,25 +6,26 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class UpdateRequest extends FormRequest
 {
-    /**
-     * Determine if the user is authorized to make this request.
-     *
-     * @return bool
-     */
+
     public function authorize()
     {
         return false;
     }
 
-    /**
-     * Get the validation rules that apply to the request.
-     *
-     * @return array
-     */
     public function rules()
     {
         return [
-            //
+            'name'=>'string|required|max:250',
+            'dni'=>'string|required|unique:products.dni,',
+            $this->route('client')->id.'|max:8',
+            'ruc'=>'string|required|unique:products.ruc',
+            $this->route('client')->id.'|max:11',
+            'address'=>'string|required|max:250',
+            'phone'=>'string|required|unique:products.phone',
+            $this->route('client')->id.'|max:9',
+            'email'=>'string|required|unique:products.email',
+            $this->route('client')->id.'|max:250|email:rfc,dns',
+            
         ];
     }
 }

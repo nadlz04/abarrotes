@@ -85,7 +85,7 @@
                                 <img alt="Thumbnail" src="{{ asset('img/portfolio-5.jpg')}}" class="list-thumbnail responsive border-0">
                             </a>
                             <div class="pl-2 d-flex flex-grow-1 min-width-zero">
-                                <div class="card-body align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero align-items-lg-center">
+                                <div class="card-body align-self-center d-flex flex-row min-width-zero">
                                     <a href="#" class="w-40 w-sm-100">
                                         <p class="list-item-heading mb-1 truncate">Trex Outdoor Furniture Cape</p>
                                     </a>

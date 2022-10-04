@@ -2,85 +2,54 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Provider;
-use App\Http\Requests\StoreProviderRequest;
-use App\Http\Requests\UpdateProviderRequest;
-
-class ProviderController extends Controller
+use App\Models\provider;
+use App\Http\Requests\StoreproviderRequest;
+use App\Http\Requests\UpdateproviderRequest;
+use App\Http\Requests\provider\StoreRequest;        //links que enlaza con las solicitudes (app\http\request)
+use App\Http\Requests\provider\UpdateRequest;
+class providerController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        //
+        $provider = provider::get();      //codigo para ver las categorias
+        return view('admin.provider.index', compact('provider'));     //codigo para listado de categorias     (compact es para eliminar la variable de la tabla)
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function create()
     {
-        //
+        return view('admin.provider.create');       //codigo para crear una categoria
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \App\Http\Requests\StoreProviderRequest  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(StoreProviderRequest $request)
+
+    public function store(StoreproviderRequest $request)
     {
-        //
+        provider::create($request->all());
+        return redirect()->route('provider.index');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Provider  $provider
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Provider $provider)
+
+    public function show(provider $provider)
     {
-        //
+        return view('admin.provider.show', compact('provider'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Provider  $provider
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Provider $provider)
+
+    public function edit(provider $provider)
     {
-        //
+        return view('admin.provider.edit', compact('provider'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \App\Http\Requests\UpdateProviderRequest  $request
-     * @param  \App\Models\Provider  $provider
-     * @return \Illuminate\Http\Response
-     */
-    public function update(UpdateProviderRequest $request, Provider $provider)
+
+    public function update(UpdateproviderRequest $request, provider $provider)
     {
-        //
+        $provider::update($request->all());
+        return redirect()->route('provider.index');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Provider  $provider
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Provider $provider)
+    public function destroy(provider $provider)
     {
-        //
+        $provider->delete();
+        return redirect()->route('provider.index');
     }
 }

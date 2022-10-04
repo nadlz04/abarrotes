@@ -70,7 +70,7 @@
                                     </div>
                                 </div>
                                 <div class="sign-btn text-center">
-                                    <button class="btn btn-custom">REGISTRARSE</button>
+                                    <button class="btn btn-custom">INGRESAR</button>
                                 </div>
                                 <div class="register">
                                     <p>{{ __('¿Sin cuenta?')}} <a href="{{url('register')}}">{{ __('Registrate')}}</a></p>

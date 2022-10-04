@@ -6,23 +6,13 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\Auth\ResetPasswordController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\RolesController;
 use App\Http\Controllers\PermissionController;
 
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 Route::get('/', function () { return view('home'); });
 
 
@@ -48,7 +38,6 @@ Route::group(['middleware' => 'auth'], function(){
         Route::get('/', [DashboardController::class,'index'])->name('admin.index');
         Route::get('category', function () { return view('admin.category.index'); });
     });
-
 
 	//only those have manage_user permission will get access
 	Route::group(['middleware' => 'can:manage_user'], function(){
@@ -143,7 +132,7 @@ Route::group(['middleware' => 'auth'], function(){
 	// new inventory routes
 	Route::get('/inventory', function () { return view('inventory.dashboard'); });
 	Route::get('/pos', function () { return view('inventory.pos'); });
-    //Route::get('/products', function () { return view('inventory.product.list'); });
+    Route::get('/products', function () { return view('inventory.product.list'); });
     Route::get('/products/get-list', [ProductController::class,'getProductList'])->name('get.product.list');
     Route::resource('products', ProductController::class)->names('inventory.product');
 
@@ -155,6 +144,16 @@ Route::group(['middleware' => 'auth'], function(){
 	Route::get('/purchases/create', function () { return view('inventory.purchase.create'); });
 	Route::get('/customers', function () { return view('inventory.people.customers'); });
 	Route::get('/suppliers', function () { return view('inventory.people.suppliers'); });
+	Route::get('/categories', function (){ return view('admin.categories.index'); });
+
+
+	//rutas de controladores
+	Route::resource('admin/categories', 'CategoryController')->names('categories');
+	Route::resource('admin/clients', 'ClientController')->names('clients');;
+	Route::resource('admin/products', 'ProductController')->names('products');;
+	Route::resource('admin/providers', 'ProviderController')->names('providers');;
+	Route::resource('admin/purchases', 'PurchaseController')->names('purchases');;
+	Route::resource('admin/sales', 'SaleController')->names('sales');;
 
 });
 
